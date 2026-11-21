@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.postcard {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  /* TODO: background sky gradient */
+  background: #16a1ba;
+background: linear-gradient(37deg, rgba(22, 161, 186, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 100%);
+}
+
+.sun {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  /* TODO: sun shape and glow */
+  border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+  /* TODO: sun color experiment */
+  box-shadow: 10px 11px 34px 2px rgba(245,237,32,0.75);
+-webkit-box-shadow: 10px 11px 34px 2px rgba(245,237,32,0.75);
+-moz-box-shadow: 10px 11px 34px 2px rgba(245,237,32,0.75);
+background: #f0ff55;
+}
+
+.hills {
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  width: 120%;
+  height: 30%;
+  /* TODO: hills shape */
+border-radius: 50% 50% 0 0 / 30% 30% 0 0; 
+background: #2fff00;
+background: linear-gradient(0deg, rgba(47, 255, 0, 1) 0%, rgba(47, 255, 0, 0.68) 100%, rgba(255, 255, 255, 1) 74%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%);
+
+
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 42
+  /* TODO: water color and transparency */
+  Text-overlay
+background: linear-gradient(
+  to bottom,
+  hsla(210, 70%, 50%, 0.85),
+  hsla(210, 60%, 30%, 1)
+);
+^Water
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, serif;
+  /* TODO: text styling and shadow */
+  color: hsl(0, 0%, 100%);
+font-size: 2rem;
+text-shadow:
+  2px 2px 4px rgba(0, 0, 0, 0.7),
+  0 0 20px hsl(45, 100%, 60%);
+  /* TODO: text color experiment */
+}
